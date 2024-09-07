@@ -23,12 +23,10 @@ img {
     height: 40px;
     width: 40px;
     object-fit: cover;
-    border-radius: 50%;
+    
 }
 
-.custom-header {
-    height: 70px; /* Establecer una altura fija para el header */
-}
+
 
 .custom-navbar {
     display: flex;
@@ -57,6 +55,8 @@ img {
 }
 
 .custom-nav-menu {
+    font-family: "Poppins", sans-serif;
+    
     display: flex;
     justify-content: stretch;
     align-items: center;
@@ -77,6 +77,7 @@ img {
 }
 
 .custom-nav-logo {
+    
     font-size: 2.1rem;
     font-weight: 500;
     color: #482ff7;
@@ -85,6 +86,8 @@ img {
 /* Estilo para dispositivos móviles */
 @media only screen and (max-width: 768px) {
     .custom-nav-menu {
+        
+        font-size: 14px;
         position: fixed;
         left: -100%;
         top: 6rem;
@@ -104,6 +107,12 @@ img {
 
     .custom-nav-item {
         margin: 2.5rem 0;
+    }
+
+    .custom-nav-item a{
+        color: #595959;
+        text-decoration: none;
+        font-size: 14px;
     }
 
     .custom-hamburger {
@@ -129,10 +138,6 @@ body {
     padding-top: 70px; /* Desplaza el contenido para que no se superponga con el navbar */
 }
 
-/* Asegura que la tarjeta tenga espacio suficiente debajo del navbar */
-.card {
-    margin-top: 2rem;
-}
 
 
 
@@ -166,83 +171,216 @@ body {
 
 
 
-
-
-
-.container_cards {
-    max-width: 1200px;
+/* LAYOUT - MAKE IT WORK */
+.banner {
+    position: relative;
+    background-color: #222;
+  }
+  
+  .banner-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../img/familia-despreocupada-divirtiendose-mientras-muda-nuevo-hogar_637285-12376.avif) center center;
+    background-size: cover;
+    opacity: 0.5;
+  }
+  
+  .primary-wrapper {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    max-width: 900px;
     margin: 0 auto;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.image-wrapper img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.text-wrapper {
-    padding: 20px;
     text-align: center;
-}
-
-.text-wrapper img.logo {
-    max-width: 150px;
-    margin-bottom: 20px;
-}
-
-.text-wrapper h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.text-wrapper p {
-    color: #777;
-    margin-bottom: 20px;
-}
-
-.text-wrapper button {
-    padding: 10px 20px;
-    background-color: #0044cc;
+  }
+  
+  .site-title {
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 52px;
+    margin: 0 0 20px;
+  }
+  
+  .site-title a {
     color: #fff;
-    border: none;
-    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .site-tagline {
+    color: #aaa;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin: 0 20%;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .banner {
+      .primary-wrapper {
+        padding-top: 75px; /* Adjusted for mobile */
+        padding-bottom: 75px; /* Adjusted for mobile */
+      }
+  
+      .site-title {
+        font-size: 36px; /* Adjusted for mobile */
+      }
+  
+      .site-tagline {
+        font-size: 12px; /* Adjusted for mobile */
+        margin: 36px 6%;
+      }
+    }
+  }
+
+
+
+
+
+
+
+  .btn-group .btn {
+    font-size: 2rem; /* Aumenta el tamaño del texto */
+    padding: 1rem 6rem; /* Aumenta el espacio interno (padding) */
+    border-radius: 0.8rem;
+    color: white;
+    
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .cards-inicio-container {
+    max-width: 1280px;
+    margin: 3rem auto;
+    padding: 1rem;
+}
+
+.cards-inicio-posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.5rem;
+}
+
+@media (max-width: 1140px) {
+    .cards-inicio-posts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-inicio-posts {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.cards-inicio-post__image {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
     border-radius: 4px;
 }
 
-.text-wrapper button:hover {
-    background-color: #003399;
+.cards-inicio-post__image:before, .cards-inicio-post__image:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
 }
 
-/* Styles for desktop view */
-@media(min-width: 768px) {
-    .content {
-        flex-direction: row;
-    }
 
-    .image-wrapper {
-        flex: 1;
-    }
 
-    .text-wrapper {
-        flex: 1;
-        padding: 40px;
-        text-align: left;
-    }
+.cards-inicio-post__image:after {
+  background: linear-gradient(30deg, #042A4F 0%, #E65891 100%);
+  background-size: 100% 300%;
+  background-position: bottom left;
+  opacity: 0.15;
+  transition: 2s cubic-bezier(0, 0.6, 0.2, 1);
+}
 
-    .text-wrapper h2 {
-        font-size: 32px;
-    }
+.cards-inicio-post__image--1:before {
+    background-image: url(../img/donde-comprar-departamento-para-inversion-interior-2-1.jpg);
+}
 
-    .text-wrapper button {
-        margin-top: 20px;
-    }
+.cards-inicio-post__image--2:before {
+    background-image: url(../img/donde-comprar-departamento-para-inversion-interior-2-1.jpg);
+}
+
+.cards-inicio-post__content {
+    margin: -3rem 1.5rem 0;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px 0 rgba(42,42,42,.05);
+    position: relative;
+    z-index: 1;
+    border: solid 1px;
+    border-color: #e7e7e7;
+    text-align: center;
+}
+
+.cards-inicio-post__inside {
+    overflow: hidden;
+    height: 14rem;
+    transition: height 0.2s ease-in-out;
+}
+
+.cards-inicio-post__title {
+    font-size: 1.35rem;
+    line-height: 1;
+    margin: 0 0 1rem;
+    font-weight: 300;
+    color: #042A4F;
+}
+
+.cards-inicio-post__excerpt {
+    overflow: hidden;
+    margin: 0;
+    max-height: 6.25rem;
+    position: relative;
 }
