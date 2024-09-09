@@ -291,8 +291,6 @@ body {
 
 
 
-
-
   .cards-inicio-container {
     max-width: 1280px;
     margin: 3rem auto;
@@ -323,6 +321,8 @@ body {
     position: relative;
     overflow: hidden;
     border-radius: 4px;
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área */
+    background-position: center; /* Centra la imagen */
 }
 
 .cards-inicio-post__image:before, .cards-inicio-post__image:after {
@@ -337,8 +337,6 @@ body {
     height: 100%;
 }
 
-
-
 .cards-inicio-post__image:after {
   background: linear-gradient(30deg, #042A4F 0%, #E65891 100%);
   background-size: 100% 300%;
@@ -348,11 +346,15 @@ body {
 }
 
 .cards-inicio-post__image--1:before {
-    background-image: url(../img/donde-comprar-departamento-para-inversion-interior-2-1.jpg);
+    background-image: url(../img/D_NQ_NP_2X_749427-MLA77268531612_072024-O.webp);
+    background-size: cover; /* Hace que la imagen cubra el contenedor */
+    background-position: center; /* Centra la imagen */
 }
 
 .cards-inicio-post__image--2:before {
-    background-image: url(../img/donde-comprar-departamento-para-inversion-interior-2-1.jpg);
+    background-image: url(../img/Amaralda-Departamentos-En-Venta-Residencial-Sur-de-Monterrey.jpg);
+    background-size: cover; /* Ajusta el tamaño de la imagen */
+    background-position: center; /* Centra la imagen */
 }
 
 .cards-inicio-post__content {
@@ -385,30 +387,20 @@ body {
 .cards-inicio-post__excerpt {
   color: #595959;
   font-size: 14px;
-    overflow: hidden;
-    margin: 0;
-    max-height: 6.25rem;
-    position: relative;
+  overflow: hidden;
+  margin: 0;
+  max-height: 6.25rem;
+  position: relative;
 }
 
-
-.logo-cards{
+.logo-cards {
   width: 70%;
-  max-width: 200px;
+  max-width: 110px;
   height: auto;
   display: block;
   margin: 0 auto;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -467,7 +459,7 @@ body {
 .card-asesorcomercial-container {
   max-width: 1280px;
   margin: 3rem auto;
-  padding: 1rem;
+  padding: 4rem;
 }
 
 .card-asesorcomercial-posts {
@@ -490,13 +482,16 @@ body {
 
 .card-asesorcomercial-post__image {
   width: 100%;
-  height: 200px;
+  height: 400px;
   position: relative;
   overflow: hidden;
   border-radius: 4px;
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor sin perder proporciones */
+  background-position: center; /* Centra la imagen */
 }
 
-.card-asesorcomercial-post__image:before, .card-asesorcomercial-post__image:after {
+.card-asesorcomercial-post__image:before, 
+.card-asesorcomercial-post__image:after {
   content: "";
   display: block;
   position: absolute;
@@ -509,15 +504,17 @@ body {
 }
 
 .card-asesorcomercial-post__image:after {
-background: linear-gradient(30deg, #042A4F 0%, #E65891 100%);
-background-size: 100% 300%;
-background-position: bottom left;
-opacity: 0.15;
-transition: 2s cubic-bezier(0, 0.6, 0.2, 1);
+  background: linear-gradient(30deg, #042A4F 0%, #E65891 100%);
+  background-size: 100% 300%;
+  background-position: bottom left;
+  opacity: 0.15;
+  transition: 2s cubic-bezier(0, 0.6, 0.2, 1);
 }
 
 .card-asesorcomercial-post__image--1:before {
-  background-image: url(../img/donde-comprar-departamento-para-inversion-interior-2-1.jpg);
+  background-image: url(../img/ejecutiva.jpg);
+  background-size: cover; /* Asegura que la imagen se vea completa */
+  background-position: center; /* Centra la imagen */
 }
 
 .card-asesorcomercial-post__content {
@@ -535,45 +532,35 @@ transition: 2s cubic-bezier(0, 0.6, 0.2, 1);
 
 .card-asesorcomercial-post__inside {
   overflow: hidden;
-  height: 22rem;
+  height: 12rem;
   transition: height 0.2s ease-in-out;
 }
 
 .card-asesorcomercial-post__title {
-  font-size: 1.35rem;
+  font-size: 3.65rem;
   line-height: 1;
   margin: 0 0 1rem;
-  font-weight: 300;
+  font-weight: 600;
   color: #042A4F;
 }
 
 .card-asesorcomercial-post__excerpt {
-color: #595959;
-font-size: 14px;
-overflow: hidden;
-margin: 0;
-max-height: 6.25rem;
+  color: #595959;
+  font-size: 14px;
+  overflow: hidden;
+  margin: 0;
+  max-height: 6.25rem;
   position: relative;
 }
 
 .logo-card-asesorcomercial {
-width: 70%;
-max-width: 200px;
-height: auto;
-display: block;
-margin: 0 auto;
-margin-bottom: 24px;
+  width: 70%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 24px;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -682,7 +669,7 @@ margin-bottom: 24px;
 .titulo__inicio {
   font-family: "Poppins", sans-serif;
     text-align: center;
-    margin: 2rem 0;
+    margin: 4rem 0;
 }
 
 .titulo__inicio-asesor {
