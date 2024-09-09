@@ -217,7 +217,7 @@ body {
   }
   
   .site-tagline {
-    color: #aaa;
+    color: whitesmoke;
     letter-spacing: 1px;
     font-size: 14px;
     margin: 0 20%;
@@ -247,14 +247,55 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .btn-group .btn {
-    font-size: 2rem; /* Aumenta el tamaño del texto */
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem; /* Aumenta el tamaño del texto */
     padding: 1rem 6rem; /* Aumenta el espacio interno (padding) */
-    border-radius: 0.8rem;
-    color: white;
-    
-    
-  }
+    border-radius: 0.8rem; /* Bordes redondeados */
+    color: #595959; /* Color del texto */
+    border: 0px solid #595959; /* Borde transparente para mantener el espaciado */
+    transition: background-color 0.3s, border-color 0.3s; /* Transición suave para los cambios de color */
+    background-color: white;
+    box-sizing: border-box;
+    border-left: 1px solid #595959;
+    font-weight: 600;
+    ;
+}
+
+
+.btn-outline-primary {
+  
+  color: #007bff; /* Color del texto para el botón primario */
+  border-color: #1f5186; /* Color del borde para el botón primario */
+  background-color: white; /* Fondo transparente para el botón primario */
+}
+.btn-outline-primary:hover {
+    background-color: #007bff; /* Fondo azul al pasar el ratón */
+    color: white; /* Color del texto al pasar el ratón */
+}
+
 
 
 
@@ -541,7 +582,7 @@ body {
   line-height: 1;
   margin: 0 0 1rem;
   font-weight: 600;
-  color: #042A4F;
+  color: #1f5186;
 }
 
 .card-asesorcomercial-post__excerpt {
@@ -609,7 +650,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #072A4F; /* Color de fondo similar al de la imagen */
+    background-color: #1f5186; /* Color de fondo similar al de la imagen */
     padding: 1rem;
     width: 100%;
     height: auto;
@@ -681,7 +722,7 @@ body {
 
 .titulo__inicio-comercial {
     font-size: 2rem;
-    color: #2A72B5; /* Color para "COMERCIAL" */
+    color: #1f5186; /* Color para "COMERCIAL" */
     font-weight: bold;
 }
 
