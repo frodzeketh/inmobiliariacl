@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans');
 * {
     margin: 0;
     padding: 0;
@@ -857,6 +857,9 @@ body {
     margin: 1rem 0 0.6rem;
   }
   
+  .service i {
+    font-size: 2rem; /* Ajusta el tamaño según tus necesidades */
+}
   .service__description {
     font-size: 0.9rem;
     margin: 1rem 0;
@@ -990,7 +993,7 @@ body {
   }
   
   .footer-container body {
-    font-family: acumin-pro, system-ui, sans-serif;
+    font-family: "Poppins", sans-serif;
     display: grid;
     grid-template-rows: auto 1fr auto;
     font-size: 14px;
@@ -1027,13 +1030,13 @@ body {
   
   .footer__addr h2 {
     margin-top: 1.3em;
-    font-size: 15px;
+    font-size: 19px;
     font-weight: 400;
   }
   
   .nav__title {
     font-weight: 400;
-    font-size: 15px;
+    font-size: 19px;
   }
   
   .footer address {
@@ -1048,7 +1051,7 @@ body {
     height: 36px;
     max-width: max-content;
     background-color: rgb(33, 33, 33, 0.07);
-    border-radius: 100px;
+    border-radius: 4px;
     color: #2f2f2f;
     line-height: 0;
     margin: 0.6em 0;
@@ -1062,7 +1065,7 @@ body {
   }
   
   .footer li {
-    line-height: 2em;
+    line-height: 3em;
   }
   
   .footer a {
@@ -1126,3 +1129,23 @@ body {
       flex: 2 0px;
     }
   }  
+
+
+
+
+
+
+
+
+
+
+  .social-icon {
+    font-size: 1.5rem; /* Ajusta el tamaño según tus necesidades */
+    color: #333; /* Cambia el color según tus preferencias */
+    text-decoration: none;
+    
+}
+
+.social-icon:hover {
+    color: #007bff; /* Cambia el color al pasar el mouse */
+}
