@@ -1263,7 +1263,19 @@ body {
 }
 
 
+.icono {
+  margin-right: 8px;
+  fill: gray; /* Cambia el color del icono si lo deseas */
+  width: 16px; /* Ajusta el tamaño a tu preferencia */
+  height: 16px;
+}
 
+.icono-cards {
+  
+  fill: gray; /* Cambia el color del icono si lo deseas */
+  width: 16px; /* Ajusta el tamaño a tu preferencia */
+  height: 16px;
+}
 
 
 
@@ -1299,24 +1311,29 @@ body {
 }
 
 .card-alquiler-header {
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: bold;
   color: #333;
 }
 
 .card-alquiler-expenses {
+  font-family: "Poppins", sans-serif;
   color: #888;
   font-size: 14px;
   margin-top: 4px;
 }
 
 .card-alquiler-location {
+  font-family: "Poppins", sans-serif;
   margin-top: 8px;
   font-size: 16px;
-  color: #555;
+  color: #333;
+  font-weight: bold;
 }
 
 .card-alquiler-info {
+  font-family: "Poppins", sans-serif;
   display: grid;
   grid-template-columns: 4fr 4fr;
   gap: 9px;
@@ -1328,12 +1345,14 @@ body {
 }
 
 .card-alquiler-description {
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   color: #666;
   margin-bottom: 16px;
 }
 
 .card-alquiler-footer {
+  font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1353,7 +1372,8 @@ body {
 
 .card-alquiler-contact-buttons {
   display: flex;
-  gap: 10px;
+  justify-content: start;
+  gap: 12px;
 }
 
 .card-alquiler-contact-buttons a {
@@ -1361,10 +1381,24 @@ body {
   display: inline-block;
   padding: 8px;
   border-radius: 50%;
-  background-color: #ddd;
+  background-color: transparent;
+  border: solid 1px gray;
 }
 
-.card-alquiler-whatsapp {
-  background-color: #25D366;
-  color: white;
+
+#wsp-cards {
+font-family: "Poppins", sans-serif;
+font-weight: 600;
+ background-color: #25D267;
+ color: white;
+ border: 0px;
+}
+
+
+.card-alquiler-contact-buttons .wsp a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #ddd;
 }
