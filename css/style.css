@@ -1158,3 +1158,213 @@ body {
 .social-icon:hover {
     color: #007bff; /* Cambia el color al pasar el mouse */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel-item{
+  max-height: 250px;
+  
+}
+.carousel-inner {
+  border-radius: 4px 4px 0px 0px;
+}
+
+
+
+
+
+
+.card-alquiler-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card-alquiler {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+
+.card-alquiler-img {
+  width: 100%;
+  height: auto;
+  grid-row: 1;
+}
+
+.card-alquiler-content {
+  padding: 16px;
+  display: grid;
+  grid-template-rows: repeat(4, auto) 1fr auto;
+  gap: 10px;
+}
+
+.card-alquiler-header {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-alquiler-expenses {
+  color: #888;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.card-alquiler-location {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #555;
+}
+
+.card-alquiler-info {
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  gap: 9px;
+}
+
+.card-alquiler-info div {
+  font-size: 14px;
+  color: #555;
+}
+
+.card-alquiler-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.card-alquiler-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-alquiler-agent-info {
+  display: flex;
+  align-items: center;
+}
+
+.card-alquiler-agent-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.card-alquiler-contact-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.card-alquiler-contact-buttons a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+.card-alquiler-whatsapp {
+  background-color: #25D366;
+  color: white;
+}
