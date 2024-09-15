@@ -23,9 +23,9 @@ a {
     text-decoration: none;
 }
 
-img {
-    height: 40px;
-    width: 40px;
+.logo-navbar{
+    height: 50px;
+    width: 110px;
     object-fit: cover;
     
 }
@@ -33,59 +33,54 @@ img {
 
 
 .custom-navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    z-index: 1000; /* Asegura que esté por encima del contenido */
-    position: fixed; /* Hace que el navbar esté siempre visible */
-    top: 0;
-    width: 100%;
-    background-color: white; /* Asegura que el fondo del navbar sea sólido */
-    border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between; /* Distribuye el espacio entre el logo y los elementos del menú */
+  align-items: center;
+  padding: 1rem 1.5rem;
+  z-index: 1000; /* Asegura que esté por encima del contenido */
+  position: fixed; /* Hace que el navbar esté siempre visible */
+  top: 0;
+  width: 100%;
+  background-color: white; /* Asegura que el fondo del navbar sea sólido */
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .custom-bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    transition: all 0.3s ease-in-out;
-    background-color: #101010;
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
 }
 
 .custom-hamburger {
-    display: none;
+  display: none;
 }
 
 .custom-nav-menu {
-    font-family: "Poppins", sans-serif;
-    
-    display: flex;
-    justify-content: stretch;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  margin: 0; /* Quita el margen predeterminado */
+  padding: 0; /* Quita el padding predeterminado */
 }
 
 .custom-nav-item {
-    margin-left: 5rem;
+  margin-left: 2rem; /* Ajusta el margen entre los elementos del menú */
 }
 
 .custom-nav-link {
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: #475569;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #475569;
 }
 
 .custom-nav-link:hover {
-    color: #482ff7;
+  color: #482ff7;
 }
 
-.custom-nav-logo {
-    
-    font-size: 2.1rem;
-    font-weight: 500;
-    color: #482ff7;
-}
+
 
 /* Estilo para dispositivos móviles */
 @media only screen and (max-width: 768px) {
@@ -141,13 +136,6 @@ img {
 body {
     padding-top: 70px; /* Desplaza el contenido para que no se superponga con el navbar */
 }
-
-
-
-
-
-
-
 
 
 
@@ -340,7 +328,7 @@ body {
 
 .cards-inicio-posts {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 2.5rem;
 }
 
@@ -505,13 +493,13 @@ body {
 
 .card-asesorcomercial-posts {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 2.5rem;
 }
 
 @media (max-width: 1140px) {
   .card-asesorcomercial-posts {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -715,13 +703,13 @@ body {
 
 .titulo__inicio-asesor {
   font-family: "Poppins", sans-serif;
-    font-size: 2rem;
+    font-size: 4rem;
     color: #333; /* Color para "ASESOR" */
     font-weight: bold;
 }
 
 .titulo__inicio-comercial {
-    font-size: 2rem;
+    font-size: 4rem;
     color: #1f5186; /* Color para "COMERCIAL" */
     font-weight: bold;
 }
@@ -1210,58 +1198,13 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.carousel-item{
+.carousel-item {
   max-height: 250px;
-  
 }
+
 .carousel-inner {
   border-radius: 4px 4px 0px 0px;
 }
-
 
 .icono {
   margin-right: 8px;
@@ -1271,13 +1214,10 @@ body {
 }
 
 .icono-cards {
-  
   fill: gray; /* Cambia el color del icono si lo deseas */
   width: 16px; /* Ajusta el tamaño a tu preferencia */
   height: 16px;
 }
-
-
 
 .card-alquiler-container {
   display: flex;
@@ -1310,7 +1250,8 @@ body {
   gap: 10px;
 }
 
-.card-alquiler-header {
+.card-alquiler-header  {
+
   font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: bold;
@@ -1383,17 +1324,28 @@ body {
   border-radius: 50%;
   background-color: transparent;
   border: solid 1px gray;
+  transition: background-color 0.3s, color 0.3s; /* Añadido para efecto de hover */
 }
 
+.card-alquiler-contact-buttons a:hover {
+  background-color: whitesmoke;
+  color: white;
+}
 
 #wsp-cards {
-font-family: "Poppins", sans-serif;
-font-weight: 600;
- background-color: #25D267;
- color: white;
- border: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  background-color: #25D267;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  padding: 8px;
+  transition: background-color 0.3s;
 }
 
+#wsp-cards:hover {
+  background-color: #1eaf57; /* Efecto hover */
+}
 
 .card-alquiler-contact-buttons .wsp a {
   text-decoration: none;
@@ -1401,4 +1353,234 @@ font-weight: 600;
   padding: 8px;
   border-radius: 4px;
   background-color: #ddd;
+  transition: background-color 0.3s;
 }
+
+.card-alquiler-contact-buttons .wsp a:hover {
+  background-color: #25D267;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Form Container */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Form and Image Side by Side on Desktop */
+@media (min-width: 1024px) {
+  .contact-container {
+      flex-direction: row;
+      justify-content: center;
+  }
+
+  .contact-form {
+      max-width: 50%;
+      margin-right: 20px;
+  }
+
+  .contact-image {
+      max-width: 35%;
+      margin: 50px;
+  }
+
+  .contact-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+  }
+}
+
+/* Contact Form Styles */
+.contact-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-group {
+  margin-bottom: 15px;
+}
+
+.contact-text {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.contact-text:focus {
+  outline: none;
+  border-color: #0062cc;
+}
+
+textarea.contact-text {
+  height: 100px;
+  resize: none;
+}
+
+.contact-checkbox {
+  margin-right: 10px;
+}
+
+.contact-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #d3d3d3;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.contact-btn:enabled {
+  background-color: #0062cc;
+  cursor: pointer;
+}
+
+.contact-btn:enabled:hover {
+  background-color: #0056b3;
+}
+
+.contact-label {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.contact-terms {
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+}
+
+.contact-link {
+  color: #0062cc;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design: Hide image on smaller screens */
+@media (max-width: 1024px) {
+  .contact-container {
+      flex-direction: column;
+  }
+
+  .contact-form,
+  .contact-image {
+      max-width: 100%;
+  }
+
+  .contact-image {
+      display: none; /* Hide image on small screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
