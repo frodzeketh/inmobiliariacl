@@ -258,18 +258,20 @@ body {
 
 
   .btn-group .btn {
+    
     font-family: "Poppins", sans-serif;
     font-size: 1.5rem; /* Aumenta el tamaño del texto */
     padding: 1rem 6rem; /* Aumenta el espacio interno (padding) */
-    border-radius: 0.8rem; /* Bordes redondeados */
+    border-radius: 4px; /* Bordes redondeados */
     color: #595959; /* Color del texto */
-    border: 0px solid #595959; /* Borde transparente para mantener el espaciado */
+    border: 1.5px solid #e7e7e7 ; /* Borde transparente para mantener el espaciado */
     transition: background-color 0.3s, border-color 0.3s; /* Transición suave para los cambios de color */
     background-color: white;
     box-sizing: border-box;
-    border-left: 1px solid #595959;
+    
     font-weight: 600;
     ;
+    
 }
 
 
@@ -1192,22 +1194,12 @@ body {
 
 
 
-/* Estilos comunes */
-.card-alquiler-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  /* Añadimos un margen arriba para que no quede pegada al borde superior */
-  margin: 20px;
-  /* Agregamos espacio en la parte inferior para que no quede pegado al footer */
-  padding-bottom: 40px;
-  
-}
 
 
 
 .card-alquiler {
+  border: solid 3px;
+    border-color: #e7e7e7;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -1413,6 +1405,7 @@ body {
   .card-alquiler {
     grid-template-rows: auto auto;
     padding: 0px;
+    margin-top: 50px;
   }
 
   .card-alquiler-content {
