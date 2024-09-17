@@ -25,7 +25,7 @@ a {
 
 .logo-navbar{
     height: 50px;
-    width: 110px;
+    width: 97px;
     object-fit: cover;
     
 }
@@ -1522,6 +1522,11 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+}
+
+.logo-footer {
+  width: 50px;
+  height: 50px;
 }
 
 /* Form and Image Side by Side on Desktop */
