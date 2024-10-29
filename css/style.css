@@ -6,10 +6,13 @@
     box-sizing: border-box;
 }
 
-
+body {
+  background-color: #FAFAFA !important;
+}
 
 
 html {
+
     font-size: 62.5%;
     font-family: "Roboto", sans-serif;
     
@@ -32,112 +35,151 @@ a {
 
 
 
+/* General Styles for Navbar */
 .custom-navbar {
   display: flex;
-  justify-content: space-between; /* Distribuye el espacio entre el logo y los elementos del menú */
+  justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
-  z-index: 1000; /* Asegura que esté por encima del contenido */
-  position: fixed; /* Hace que el navbar esté siempre visible */
-  top: 0;
-  width: 100%;
-  background-color: white; /* Asegura que el fondo del navbar sea sólido */
-  border-bottom: 1px solid #e2e8f0;
+  padding: 1rem;
+  position: relative;
+  background-color: #fff;
 }
 
-.custom-bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  transition: all 0.3s ease-in-out;
-  background-color: #101010;
+/* Logo */
+.custom-nav-logo img,
+.custom-nav-logo-center img {
+  max-height: 60px;
 }
 
-.custom-hamburger {
-  display: none;
-}
-
+/* Desktop Navigation Menu */
 .custom-nav-menu {
   display: flex;
-  align-items: center;
-  margin: 0; /* Quita el margen predeterminado */
-  padding: 0; /* Quita el padding predeterminado */
+  gap: 2rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .custom-nav-item {
-  margin-left: 2rem; /* Ajusta el margen entre los elementos del menú */
+  list-style: none;
 }
 
 .custom-nav-link {
   text-decoration: none;
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: #475569;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
 }
 
 .custom-nav-link:hover {
-  color: #482ff7;
+  color: #007bff;
 }
 
+.custom-login-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
 
+.custom-login-button:hover {
+  background-color: #0056b3;
+}
 
-/* Estilo para dispositivos móviles */
+/* Hamburger Menu for Responsive */
+.custom-hamburger {
+  display: none; /* Hidden in desktop */
+}
+
+/* Button Styles */
+.custom-btn-circle {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn-circle:hover {
+  background-color: #0056b3;
+}
+
+/* Offcanvas header */
+.offcanvas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Responsive Styles */
 @media only screen and (max-width: 768px) {
-    .custom-nav-menu {
-        
-        font-size: 14px;
-        position: fixed;
-        left: -100%;
-        top: 6rem;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: 0.9s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-        background-color: white; /* Fondo blanco sólido para el menú móvil */
-        z-index: 999; /* Asegura que esté por encima del contenido de Bootstrap */
-    }
+  /* Hide desktop navigation elements */
+  .custom-nav-menu,
+  .custom-login-button {
+      display: none;
+  }
 
-    .custom-nav-menu.active {
-        left: 0;
-    }
+  /* Show hamburger and adjust layout */
+  .custom-hamburger {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+  }
 
-    .custom-nav-item {
-        margin: 2.5rem 0;
-    }
+  /* Center logo between the two buttons */
+  .custom-nav-logo-center {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 50%;
+      transform: translate(-50%, -50%);
+  }
 
-    .custom-nav-item a{
-        color: #595959;
-        text-decoration: none;
-        font-size: 14px;
-    }
+  /* Logo height adjustments for responsive */
+  .custom-nav-logo-center img {
+      max-height: 70px;
+  }
 
-    .custom-hamburger {
-        display: block;
-        cursor: pointer;
-    }
 
-    .custom-hamburger.active .custom-bar:nth-child(2) {
-        opacity: 0;
+  .icon-style {
+      color: #7D7C7C; /* Ejemplo de color */
+      font-size: 24px; /* Tamaño del icono */
+      width: 24px;
+      height: 24px;
+      
     }
+    
 
-    .custom-hamburger.active .custom-bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+    .btn-border {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      width: 40px !important;
+      height: 40px !important;
+      border-radius: 50% !important;
+      border: solid 1px #e7e7e7 !important;
+      background-color: white !important;
+      color: #e7e7e7 !important;
     }
+    
+  
 
-    .custom-hamburger.active .custom-bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
+
+
 }
-
-/* Añadido para evitar que el contenido se superponga al navbar */
-body {
-    padding-top: 70px; /* Desplaza el contenido para que no se superponga con el navbar */
-}
-
-
 
 
 
@@ -326,6 +368,7 @@ body {
     max-width: 1280px;
     margin: 3rem auto;
     padding: 1rem;
+    
 }
 
 .cards-inicio-posts {
@@ -390,7 +433,7 @@ body {
 
 .cards-inicio-post__content {
     margin: -3rem 1.5rem 0;
-    padding: 1.5rem;
+    padding: 0.7rem;
     background-color: #fff;
     border-radius: 4px;
     box-shadow: 0 2px 3px 0 rgba(42,42,42,.05);
@@ -403,14 +446,14 @@ body {
 
 .cards-inicio-post__inside {
     overflow: hidden;
-    height: 22rem;
+    height: 25.5rem;
     transition: height 0.2s ease-in-out;
 }
 
 .cards-inicio-post__title {
     font-size: 1.35rem;
     line-height: 1;
-    margin: 0 0 1rem;
+    margin: 0 0 0rem;
     font-weight: 300;
     color: #042A4F;
 }
@@ -418,10 +461,12 @@ body {
 .cards-inicio-post__excerpt {
   color: #595959;
   font-size: 14px;
+  font-family: "Poppins", sans-serif; 
   overflow: hidden;
-  margin: 0;
+  margin-bottom: 16px;
   max-height: 6.25rem;
   position: relative;
+
 }
 
 .logo-cards {
@@ -430,11 +475,22 @@ body {
   height: auto;
   display: block;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 
+.btn-cards {
+  width: 190px;
+  height: 48px;
+  line-height: 48px;
+  background-color: #003da5 !important;
+  border: none !important;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 700 !important;
+  border-radius: 4px !important;
 
+  
+}
 
 
 
@@ -630,17 +686,11 @@ body {
 
 
 
-
-
-
-
-
-
 .logo__inicio-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1f5186; /* Color de fondo similar al de la imagen */
+    background-color: #003da5; /* Color de fondo similar al de la imagen */
     padding: 1rem;
     width: 100%;
     height: auto;
@@ -978,11 +1028,14 @@ body {
 
 
 
+  
   .footer-container * {
+    
     box-sizing: border-box;
   }
   
   .footer-container body {
+    
     font-family: "Poppins", sans-serif;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -996,10 +1049,11 @@ body {
   .footer {
     display: flex;
     flex-flow: row wrap;
-    padding: 30px 30px 20px 30px;
+    padding: 30px auto;
     color: #2f2f2f;
     background-color: #fff;
     border-top: 1px solid #e5e5e5;
+    
   }
   
   .footer > * {
@@ -1012,21 +1066,37 @@ body {
   }
   
   .footer__logo {
-    font-family: 'Pacifico', cursive;
-    font-weight: 400;
-    text-transform: lowercase;
-    font-size: 1.5rem;
-  }
-  
+    width: 150px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin: 20px 20px;
+    display: block; /* Centra el logo */
+}
+.logo-footer {
+    width: 88px;
+    height: auto; /* Mantiene las proporciones */
+    transition: transform 0.3s ease; /* Añade una transición suave al hacer hover */
+
+    
+}
+
+
+
   .footer__addr h2 {
-    margin-top: 1.3em;
+   
+    
     font-size: 19px;
     font-weight: 400;
   }
   
   .nav__title {
+    margin: 20px 20px;
     font-weight: 400;
     font-size: 19px;
+    
+  }
+
+  .nav__ul {
+    margin: auto 20px;
   }
   
   .footer address {
@@ -1034,8 +1104,11 @@ body {
     color: #999;
     font-size: 19px;
   }
+
+  
   
   .footer__btn {
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1045,26 +1118,30 @@ body {
     border-radius: 4px;
     color: #2f2f2f;
     line-height: 0;
-    margin: 0.6em 0;
+    margin: auto 20px;
     font-size: 1rem;
     padding: 0 1.3em;
   }
   
   .footer ul {
+    
     list-style: none;
     padding-left: 0;
   }
   
   .footer li {
+    
     line-height: 3em;
   }
   
   .footer a {
+    
     font-size: 14px;
     text-decoration: none;
   }
   
   .footer__nav {
+    border-top: 1px solid #e5e5e5;
     display: flex;
     flex-flow: row wrap;
   }
@@ -1075,6 +1152,7 @@ body {
   }
   
   .nav__ul a {
+    
     font-size: 18px;
     color: #999;
   }
@@ -1088,6 +1166,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     color: #999;
+    margin: auto 20px;
   }
     
   .legal__links {
@@ -1121,6 +1200,8 @@ body {
     .footer__nav {
       flex: 2 0px;
     }
+
+    
   }  
 
 
@@ -1148,7 +1229,6 @@ body {
 .social-icon:hover {
     color: #007bff; /* Cambia el color al pasar el mouse */
 }
-
 
 
 
@@ -1998,13 +2078,78 @@ textarea.contact-text {
 
 
 
+.container-cards-vector {
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.row-cards-vector {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 65px; /* Espacio entre tarjetas */
+}
+
+.col-cards-vector {
+  flex: 1 1 18rem;
+  max-width: 33rem;
+}
+
+.card-cards-vector {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card-img-top-cards-vector {
+  width: 100%;
+  height: auto;
+}
+
+.card-body-cards-vector {
+  padding: 15px;
+  background-color: white !important;
+}
+
+.card-title-cards-vector {
+  font-family: "Poppins", sans-serif; 
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  color: #353535;
+}
+
+.card-text-cards-vector {
+  color: #595959;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif; 
+  overflow: hidden;
+  margin-bottom: 16px;
+  max-height: 6.25rem;
+  position: relative;
+  
+}
+
+.btn-cards-vector {
+  background-color: #007b
+}
 
 
+.btn-cards-2 {
+  width: 150px;
+  height: 48px;
+  line-height: 48px;
+  background-color: #003da5 !important;
+  border: none !important;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 700 !important;
+  border-radius: 4px !important;
 
-
-
-
-
+  
+}
 
 
 

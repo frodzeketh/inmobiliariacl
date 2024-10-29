@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+
+
+</head>
+<body>
+  <header class="custom-header"  >
+    <nav class="custom-navbar">
+        <a href="../index.html" class="custom-nav-logo">
+            <img class="logo-navbar" src="../../img/logo2.png" alt="Logo">
+        </a>
+        <ul class="custom-nav-menu">
+          <li class="custom-nav-item">
+            <a href="../index.html" class="custom-nav-link">Inicio</a>
+        </li>
+        <li class="custom-nav-item">
+            <a href="./alquileres.html" class="custom-nav-link">Alquilar</a>
+        </li>
+        <li class="custom-nav-item">
+            <a href="./comprar.html" class="custom-nav-link">Comprar</a>
+        </li>
+        <li class="custom-nav-item">
+            <a href="#" class="custom-nav-link">Emprendimientos</a>
+        </li>
+        <li class="custom-nav-item">
+          <a href="./blog.html" class="custom-nav-link">Blog</a>
+      </li>
+      <li class="custom-nav-item">
+        <a href="./contacto.html" class="custom-nav-link">Contacto</a>
+    </li>
+        </ul>
+        <div class="custom-hamburger">
+            <span class="custom-bar"></span>
+            <span class="custom-bar"></span>
+            <span class="custom-bar"></span>
+        </div>
+    </nav>
+</header>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-propiedad">
+  <!-- Especificaciones -->
+  <div class="especificaciones-alquiler">
+    <div class="card-alquiler-content">
+      <h2 class="card-alquiler-header">400.000 CLP</h2>
+      <p class="card-alquiler-location">+ 70.000 Expensas</p>
+      <p class="card-alquiler-expenses">Av. Libertador Bernardo O'Higgins 1000, Santiago Centro</p>
+    </div>
+  </div>
+
+  <!-- Ubicación -->
+  <div class="ubicacion-alquiler">
+    <h2 class="card-alquiler-header">Ubicación</h2>
+    <p class="card-alquiler-location">+ 70.000 Expensas</p>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.436028637473!2d-58.4037247!3d-34.5953819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf229d6cc3%3A0xaddf7ad345eae5e9!2sParaguay%202000%2C%20C1121%20AAG%2C%20CABA%2C%20Argentina!5e0!3m2!1ses!2sus!4v1696884937977!5m2!1ses!2sus" 
+            
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>
+
+  <!-- Contacto -->
+  <div class="grid-contacto">
+      
+      <div class="contact-container">
+        <div class="contact-form">
+            <form>
+                <div class="contact-group">
+                    <input type="text" class="contact-text" id="name" placeholder="Nombre y apellido *" required>
+                </div>
+    
+                <div class="contact-group">
+                    <input type="email" class="contact-text" id="email" placeholder="Email *" required>
+                </div>
+    
+                <div class="contact-group">
+                    <input type="tel" class="contact-text" id="phone" placeholder="Teléfono *" required>
+                </div>
+    
+                <div class="contact-group">
+                    <input type="text" class="contact-text" id="address" placeholder="Dirección *" required>
+                </div>
+    
+                <div class="contact-group">
+                    <select class="contact-text" id="category" required>
+                        <option value="" disabled selected>Categoría *</option>
+                        <option value="1">Consulta General</option>
+                        <option value="2">Soporte Técnico</option>
+                        <option value="3">Ventas</option>
+                    </select>
+                </div>
+    
+                <div class="contact-group">
+                    <textarea class="contact-text" id="comments" placeholder="Comentarios *" required></textarea>
+                </div>
+    
+                <div class="contact-group">
+                    <input type="checkbox" id="copy-email" class="contact-checkbox">
+                    <label for="copy-email" class="contact-label">Quiero recibir una copia del mensaje en mi email</label>
+                </div>
+    
+                <div class="contact-group">
+                    <button type="submit" class="contact-btn" disabled>Enviar</button>
+                </div>
+    
+                <div class="contact-group contact-terms">
+                    <p>Al enviar se están aceptando los <a href="#" class="contact-link">Términos y Condiciones de Uso</a> y la <a href="#" class="contact-link">Política de Privacidad</a></p>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+    
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer__addr">
+          <h1 class="footer__logo"><img src="../../img/logo2.png" alt="" class="logo-footer"></h1>
+              
+          <h2>Contacto</h2>
+          
+          <address>
+            Las Condes, 123<br>
+                
+            <a class="footer__btn" href="mailto:example@gmail.com">Correo electronico</a>
+          </address>
+        </div>
+        
+        <ul class="footer__nav">
+          <li class="nav__item">
+            <h2 class="nav__title">Servicios</h2>
+      
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Alquilar</a>
+              </li>
+      
+              <li>
+                <a href="#">Vender</a>
+              </li>
+                  
+              <li>
+                <a href="#">Emprender</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="nav__item nav__item--extra">
+            <h2 class="nav__title">Redes Sociales</h2>
+            
+            <ul class="nav__ul nav__ul--extra">
+              <li>
+                
+                <a href="https://www.instagram.com/tu_cuenta" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/tu_cuenta" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                
+              </li>
+              
+            </ul>
+          </li>
+          
+          <li class="nav__item">
+            <h2 class="nav__title">Legal</h2>
+            
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Politicas de Privacidad</a>
+              </li>
+              
+              <li>
+                <a href="#">Terminos de uso</a>
+              </li>
+              
+              <li>
+                <a href="#">Ubicación</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+        <div class="legal">
+          <p>&copy; 2024 | Copy</p>
+          
+          
+        </div>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+</body>
+</html>
