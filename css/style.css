@@ -1401,7 +1401,7 @@ a {
 
 
 .icono-cards {
-  fill: #042A4F; /* Cambia el color del icono si lo deseas */
+  fill: #0908a4; /* Cambia el color del icono si lo deseas */
   width: 16px; /* Ajusta el tamaño a tu preferencia */
   height: 16px;
 }
@@ -1419,7 +1419,7 @@ a {
   padding: 8px;
   border-radius: 50%;
   background-color: transparent;
-  border: solid 1px #042A4F;
+  border: solid 1px #0908a4;
   transition: background-color 0.3s, color 0.3s; /* Efecto de hover */
 }
 
@@ -1432,9 +1432,9 @@ a {
 
 
 .card-alquiler-contact-buttons .card-alquiler-wsp {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  
+  justify-content: center;
   text-decoration: none;
   padding: 8px;
   border-radius: 4px;
@@ -1444,6 +1444,8 @@ a {
   transition: background-color 0.3s, color 0.3s;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  width: 120px;
+  
 }
 
 .card-alquiler-contact-buttons .card-alquiler-wsp:hover {
@@ -1451,12 +1453,16 @@ a {
 }
 
 
+.icono-wsp {
+  font-size: 17px;
+  margin-right: 2px;
+}
 
 
 
 .card-alquiler-icons span {
   font-family: "Poppins", sans-serif;
-  color: #042A4F;
+  color: #666;
 }
 
 /* Estilos para el texto entre paréntesis en negrita */
