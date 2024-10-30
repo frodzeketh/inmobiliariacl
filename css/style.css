@@ -1283,7 +1283,7 @@ a {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  max-width: 350px;
+  max-width: 372px;
   width: 100%;
   display: grid;
   grid-template-rows: auto auto;
@@ -1401,7 +1401,7 @@ a {
 
 
 .icono-cards {
-  fill: gray; /* Cambia el color del icono si lo deseas */
+  fill: #042A4F; /* Cambia el color del icono si lo deseas */
   width: 16px; /* Ajusta el tamaño a tu preferencia */
   height: 16px;
 }
@@ -1419,7 +1419,7 @@ a {
   padding: 8px;
   border-radius: 50%;
   background-color: transparent;
-  border: solid 1px gray;
+  border: solid 1px #042A4F;
   transition: background-color 0.3s, color 0.3s; /* Efecto de hover */
 }
 
@@ -1456,7 +1456,7 @@ a {
 
 .card-alquiler-icons span {
   font-family: "Poppins", sans-serif;
-  color: #403f3f;
+  color: #042A4F;
 }
 
 /* Estilos para el texto entre paréntesis en negrita */
@@ -1485,13 +1485,60 @@ a {
   .card-alquiler {
     grid-template-rows: auto auto;
     padding: 0px;
-    margin-top: 50px;
+    margin-top: 25px;
   }
 
   .card-alquiler-content {
     grid-template-rows: repeat(4, auto) 1fr auto;
   }
 }
+
+.card-alquiler-description {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  color: #666;
+  margin-top: 10px;
+  
+}
+
+
+.name-agent {
+  
+  font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 24px;
+}
+
+
+.card-alquiler-footer {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+.card-alquiler-agent-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin-right: 18px;
+  border: solid 1px #e7e7e7;
+}
+
+.card-alquiler-icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas para colocar icono + info en una fila */
+  gap: 16px;
+}
+
+
+.carousel-item {
+  max-height: 207px;
+}
+
 
 .carousel-inner {
   height: 100%;

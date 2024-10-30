@@ -10,43 +10,69 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+<link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 
 </head>
 <body>
-  <header class="custom-header"  >
+  <header class="custom-header">
     <nav class="custom-navbar">
-        <a href="../index.html" class="custom-nav-logo">
-            <img class="logo-navbar" src="../img/logo2.png" alt="Logo">
-        </a>
         <ul class="custom-nav-menu">
-          <li class="custom-nav-item">
-            <a href="../index.html" class="custom-nav-link">Inicio</a>
-        </li>
-        <li class="custom-nav-item">
-            <a href="./alquileres.html" class="custom-nav-link">Alquilar</a>
-        </li>
-        <li class="custom-nav-item">
-            <a href="./comprar.html" class="custom-nav-link">Comprar</a>
-        </li>
-        <li class="custom-nav-item">
-            <a href="#" class="custom-nav-link">Emprendimientos</a>
-        </li>
-        <li class="custom-nav-item">
-          <a href="./blog.html" class="custom-nav-link">Blog</a>
-      </li>
-      <li class="custom-nav-item">
-        <a href="./contacto.html" class="custom-nav-link">Contacto</a>
-    </li>
+            <li class="custom-nav-item">
+                <a href="./index.html" class="custom-nav-link">Inicio</a>
+            </li>
+            <li class="custom-nav-item">
+                <a href="./pages/alquileres.html" class="custom-nav-link">Alquilar</a>
+            </li>
+            <li class="custom-nav-item">
+                <a href="./pages/comprar.html" class="custom-nav-link">Comprar</a>
+            </li>
+            <li class="custom-nav-item">
+                <a href="#" class="custom-nav-link">Emprendimientos</a>
+            </li>
+            <li class="custom-nav-item">
+                <a href="./pages/blog.html" class="custom-nav-link">Blog</a>
+            </li>
+            <li class="custom-nav-item">
+                <a href="./pages/contacto.html" class="custom-nav-link">Contacto</a>
+            </li>
         </ul>
+        <button class="custom-login-button">Iniciar sesión</button>
         <div class="custom-hamburger">
-            <span class="custom-bar"></span>
-            <span class="custom-bar"></span>
-            <span class="custom-bar"></span>
+            <button class="btn btn-primary btn-border" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                <i class='bx bx-menu icon-style'></i>
+            </button>
+            <a href="../index.html" class="custom-nav-logo-center">
+                <img class="logo-navbar" src="../img/logo.png" alt="Logo" />
+            </a>
+            <button class="btn btn-primary btn-border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <i class='bx bx-user icon-style'></i>
+            </button>
         </div>
     </nav>
 </header>
+
+<!-- Offcanvas izquierda -->
+<div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel">A</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        Content on the left.
+    </div>
+</div>
+
+<!-- Offcanvas derecha -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">C</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        Content on the right.
+    </div>
+</div>
 
 
     
@@ -66,9 +92,21 @@
 
 
 
-<div class="card-alquiler-container"></div>
-  <div class="card-alquiler" onclick="window.location.href='https://www.ejemplo.com'">
-      <div id="carouselExample1" class="carousel slide"> 
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="card-alquiler-container" ></div>
+  <div class="card-alquiler" >
+      <div id="carouselExample6" class="carousel slide"> 
           <div class="carousel-inner">
               <div class="carousel-item active">
                   <img src="../img/foto1.jpeg" class="d-block w-100 card-alquiler-img" alt="...">
@@ -80,11 +118,11 @@
                   <img src="../img/foto3.jpeg" class="d-block w-100 card-alquiler-img" alt="...">
               </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample6" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample6" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
           </button>
@@ -120,8 +158,9 @@
           <div class="card-alquiler-agent-info">
             <img src="../img/portada-empresario-individual.jpg" alt="Agente" class="card-alquiler-agent-img">
             <div>
-              <div>Rodrigo Facundo</div>
-              <div style="font-size: 12px; color: #888;">Egall Propiedades</div>
+              <div class="name-agent">Rodrigo Paredes</div>
+
+              <div style="font-size: 12px; color: #888;">Inm. Aconcagua</div>
             </div>
           </div>
         </div>
@@ -726,82 +765,81 @@
 
 
 
-    <footer class="footer">
-        <div class="footer__addr">
-          <h1 class="footer__logo"><img src="../img/logo2.png" alt="" class="logo-footer"></h1>
-              
-          <h2>Contacto</h2>
-          
-          <address>
-            Las Condes, 123<br>
-                
-            <a class="footer__btn" href="mailto:example@gmail.com">Correo electronico</a>
-          </address>
-        </div>
-        
-        <ul class="footer__nav">
-          <li class="nav__item">
-            <h2 class="nav__title">Servicios</h2>
+   <!-- Footer -->
+<footer class="footer">
+  <div class="footer__addr">
+      <h1 class="footer__logo">
+          <img src="../img/logo.png" alt="Logo" class="logo-footer">
+      </h1>
       
-            <ul class="nav__ul">
-              <li>
-                <a href="#">Alquilar</a>
-              </li>
-      
-              <li>
-                <a href="#">Vender</a>
-              </li>
-                  
-              <li>
-                <a href="#">Emprender</a>
-              </li>
-            </ul>
-          </li>
-          
-          <li class="nav__item nav__item--extra">
-            <h2 class="nav__title">Redes Sociales</h2>
-            
-            <ul class="nav__ul nav__ul--extra">
-              <li>
-                
-                <a href="https://www.instagram.com/tu_cuenta" target="_blank" class="social-icon">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/tu_cuenta" target="_blank" class="social-icon">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
+      <h2 class="nav__title">Servicios</h2>
+      <ul class="nav__ul">
+          <li><a href="#">Comprar</a></li>
+          <li><a href="#">Alquilar</a></li>
+          <li><a href="#">Vender</a></li>
+          <li><a href="#">Emprender</a></li>
+          <li><a href="#">Información</a></li>
+          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+      </ul>
 
-                
-              </li>
-              
-            </ul>
-          </li>
-          
-          <li class="nav__item">
-            <h2 class="nav__title">Legal</h2>
-            
-            <ul class="nav__ul">
+      <address>
+          <a class="footer__btn" href="mailto:example@gmail.com">Correo electrónico</a>
+      </address>
+  </div>
+
+  <ul class="footer__nav">
+      <li class="nav__item">
+          <h2 class="nav__title">Encuentra más propiedades</h2>
+          <ul class="nav__ul">
+              <li><a href="#">Propiedades en Santiago</a></li>
+              <li><a href="#">Propiedades en Viña del Mar</a></li>
+              <li><a href="#">Propiedades en Antofagasta</a></li>
+              <li><a href="#">Propiedades en Arica</a></li>
+              <li><a href="#">Propiedades en Atacama</a></li>
+          </ul>
+      </li>
+  </ul>
+
+  <ul class="footer__nav">
+      <li class="nav__item">
+          <h2 class="nav__title">Propiedades en Alquiler</h2>
+          <ul class="nav__ul">
+              <li><a href="#">Departamentos en alquiler en Santiago</a></li>
+              <li><a href="#">Casas en alquiler en Valparaíso</a></li>
+              <li><a href="#">Casas en alquiler en Concepción</a></li>
+              <li><a href="#">Casas en alquiler en La Serena</a></li>
+              <li><a href="#">Casas en alquiler en Antofagasta</a></li>
+              <li><a href="#">Casas en alquiler en Temuco</a></li>
+              <li><a href="#">Casas en alquiler en Viña del Mar</a></li>
+              <li><a href="#">Casas en alquiler en Rancagua</a></li>
+          </ul>
+      </li>
+  </ul>
+
+  <ul class="footer__nav">
+      <li class="nav__item nav__item--extra">
+          <h2 class="nav__title">Redes Sociales</h2>
+          <ul class="nav__ul nav__ul--extra">
               <li>
-                <a href="#">Politicas de Privacidad</a>
+                  <a href="https://www.instagram.com/tu_cuenta" target="_blank" class="social-icon">
+                      <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://www.facebook.com/tu_cuenta" target="_blank" class="social-icon">
+                      <i class="fab fa-facebook-f"></i>
+                  </a>
               </li>
-              
-              <li>
-                <a href="#">Terminos de uso</a>
-              </li>
-              
-              <li>
-                <a href="#">Ubicación</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        
-        <div class="legal">
-          <p>&copy; 2024 | Copy</p>
-          
-          
-        </div>
-      </footer>
+          </ul>
+      </li>
+  </ul>
+
+  <div class="legal">
+      <p>&copy; 2024 | Copy</p>
+  </div>
+</footer>
+
+
+
 
 
 
