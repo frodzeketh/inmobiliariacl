@@ -279,15 +279,60 @@ a {
 
 
 
+  .link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.link-container a {
+    display: block;
+    padding: 2rem 0;
+    color: #6b6b6b; /* Cambia el color según prefieras */
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+.link-container a:hover {
+    color: #0056b3; /* Color al pasar el mouse por encima */
+}
+
+.offcanvas-body {
+ padding: 1rem 3rem !important;
+}
+
+
+
+.a-color-nav{
+  
+  color: #003da5 !important;
+}
 
 
 
 
+/* Estilos del botón de cierre en el offcanvas */
+.custom-close-btn {
+  max-width: 11px !important;
+  max-height: 11px !important;
+  padding: 15px !important; /* Espacio alrededor */
+  background-size: 2rem !important; /* Tamaño del ícono de cierre */
+  opacity: 0.8 !important; /* Opacidad */
+  transition: opacity 0.3s ease !important;
+  border-radius: 50% !important;
+  border: solid 1px #e7e7e7 !important;
+  margin-right: 15px !important;
+  color: red !important;
+  
+  
+}
 
-
-
-
-
+.custom-close-btn:hover {
+  opacity: 1 !important; /* Aumentar visibilidad al pasar el mouse */
+}
 
 
 
@@ -327,6 +372,74 @@ a {
     background-color: #007bff; /* Fondo azul al pasar el ratón */
     color: white; /* Color del texto al pasar el ratón */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tittle-nav-off p {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  color: #666;
+  margin-top: 10px;
+  
+}
+
+.btn-inicio-sesion {
+  margin-top: 10px;
+  border: 1px solid #003da5 !important;
+  background-color: #fff !important;
+  color: #003da5 !important;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 700 !important;
+  height: 48px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
