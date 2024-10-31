@@ -190,6 +190,31 @@ a {
 
 
 
+.nav-logo{
+  width: 150px; /* Ajusta el tamaño del logo */
+  height: auto;
+  margin: 0px 20px;
+  display: block; /* Centra el logo */
+}
+
+
+
+.logo-nav-off {
+  width: 75px;
+  height: 75px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -318,21 +343,31 @@ a {
 .custom-close-btn {
   max-width: 11px !important;
   max-height: 11px !important;
-  padding: 15px !important; /* Espacio alrededor */
-  background-size: 2rem !important; /* Tamaño del ícono de cierre */
-  opacity: 0.8 !important; /* Opacidad */
-  transition: opacity 0.3s ease !important;
+  padding: 15px !important;
+  background-color: #ffffff !important; /* Fondo blanco */
   border-radius: 50% !important;
-  border: solid 1px #e7e7e7 !important;
+  border: solid 1px #e7e7e7 !important; /* Borde gris claro */
   margin-right: 15px !important;
-  color: red !important;
-  
-  
+  color: #7D7C7C !important; /* Color de la "X" */
+  opacity: 0.8 !important;
+  box-shadow: none !important; /* Sin sombra */
+  transition: opacity 0.3s ease !important;
 }
 
-.custom-close-btn:hover {
-  opacity: 1 !important; /* Aumentar visibilidad al pasar el mouse */
+/* Aplica el color a la "X" específicamente */
+.custom-close-btn::before {
+  color: #7D7C7C !important; /* Color de la "X" */
+  font-weight: bold;
 }
+
+/* Cambiar la opacidad al pasar el mouse */
+.custom-close-btn:hover {
+  opacity: 1 !important;
+}
+
+
+
+
 
 
 
@@ -2278,6 +2313,7 @@ textarea.contact-text {
 .card-body-cards-vector {
   padding: 15px;
   background-color: white !important;
+  border-top: solid 1px #e7e7e7;
 }
 
 .card-title-cards-vector {
