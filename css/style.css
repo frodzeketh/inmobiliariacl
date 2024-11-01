@@ -2355,3 +2355,356 @@ textarea.contact-text {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider-alquileres {
+  margin-top: 60px;
+  position: relative;
+  width: 100%;
+  max-height: 80vh; /* Limitar la altura máxima */
+  overflow: visible; /* Cambiado de 'hidden' a 'visible' para permitir el desplazamiento */
+}
+
+.slider-inner-alquileres {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider-item-alquileres {
+  min-width: 100%;
+  height: auto; /* Cambiado de '100%' a 'auto' para adaptarse al contenido */
+}
+
+.slider-item-alquileres img {
+  width: 100%;
+  height: auto; /* Cambiado de '100%' a 'auto' para mantener la proporción */
+  object-fit: cover;
+}
+
+/* Botones de navegación */
+.boton-prev-alquileres,
+.boton-next-alquileres {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.boton-prev-alquileres {
+  left: 16px;
+}
+
+.boton-next-alquileres {
+  right: 16px;
+}
+
+.boton-prev-alquileres svg,
+.boton-next-alquileres svg {
+  width: 24px;
+  height: 24px;
+  color: #333;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .slider-alquileres {
+    max-height: 60vh; /* Altura ajustada para tabletas */
+  }
+}
+
+@media (min-width: 1024px) {
+  .slider-alquileres {
+    max-width: 1200px;
+    margin: 80px auto 0;
+    height: auto; /* Cambiado de '500px' a 'auto' para adaptarse al contenido */
+    border-radius: 8px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos generales */
+.container-maps {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+/* Columna Izquierda */
+.titulo-precio {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.detalles-propiedad {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.detalles-item i {
+  color: #555;
+}
+
+/* Descripción */
+.card-descripcion {
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.titulo-descripcion {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.descripcion-texto {
+  color: #666;
+}
+
+.boton-ver-mas {
+  color: #0066cc;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+/* Características */
+.card-caracteristicas {
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+/* Ubicación */
+.card-ubicacion {
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.titulo-ubicacion {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+}
+
+/* Columna Derecha */
+.card-financiamiento {
+  background-color: #f8fafb;
+  border: 1px solid #32bdbd33;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.financiamiento-info {
+  color: #0066cc;
+}
+
+.card-contacto {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.foto-contacto img {
+  border-radius: 50%;
+}
+
+.input-contacto,
+.textarea-contacto {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.btn-enviar {
+  background-color: #0066cc;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.opciones-contacto .btn-phone,
+.opciones-contacto .btn-email,
+.opciones-contacto .btn-whatsapp {
+  background: none;
+  border: none;
+  color: #666;
+}
+
+.btn-whatsapp {
+  color: #25d366; /* Verde de WhatsApp */
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+  .container-maps {
+    grid-template-columns: 1fr;
+  }
+
+  .map-container iframe {
+    height: 200px;
+  }
+
+  .detalles-propiedad {
+    gap: 8px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
