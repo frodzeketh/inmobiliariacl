@@ -43,6 +43,8 @@ a {
   padding: 1rem;
   position: relative;
   background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 3px 0 rgba(42,42,42,.05);
 }
 
 /* Logo */
@@ -276,7 +278,7 @@ a {
     text-align: center;
     letter-spacing: 2px;
     font-size: 52px;
-    margin: 0 0 20px;
+    margin: 28px 0 20px;
   }
   
   .site-title a {
@@ -418,6 +420,7 @@ a {
 }
 .btn-outline-primary:hover {
     background-color: #007bff; /* Fondo azul al pasar el ratón */
+
     color: white; /* Color del texto al pasar el ratón */
 }
 
@@ -3470,5 +3473,232 @@ textarea.contact-text {
 
   .stats-grid {
       grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.search-container {
+  background-image: url('../img/familia2.png'); /* Ruta a tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen en la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    
+  
+  padding: 2rem;
+  width: 100%;
+  max-width: 100%;
+  
+  height: 350px;
+}
+
+.toggle-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+  width: 50%;
+}
+
+.toggle-button {
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+  border: none;
+  background: #fff;
+  color: #595959;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 4px; 
+  border: none;
+}
+
+.toggle-button.active {
+  background: #0047AB;
+  color: white;
+}
+
+.search-box {
+  font-family: "Poppins", sans-serif;
+  border-radius: 4px; 
+  position: relative;
+  background: #fff;
+  margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+  width: 50%;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.location-select {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  appearance: none;
+  background: white;
+  cursor: pointer;
+  font-weight: 600;
+  color: #595959;
+  
+}
+
+.search-button {
+  font-family: "Poppins", sans-serif;
+  border: none;
+  font-weight: 600;
+  padding: 1rem;
+  margin: 0 auto; /* Centra el botón horizontalmente */
+  width: 50%;
+  display: block; /* Asegura que el botón sea un elemento de tipo bloque */
+  
+  border-radius: 4px;
+  background: #0047AB;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-button:hover {
+  background: #003380;
+}
+
+@media (max-width: 480px) {
+  .search-container {
+      padding: 1rem;
+      background-image: url('../img/Familia-haciendo-una-mudanza.jpg'); /* Ruta a tu imagen */
+      background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+      background-position: center; /* Centra la imagen en la pantalla */
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
+  }
+
+  .toggle-buttons {
+    gap: 0.5rem;
+    width: 100%;
+  }
+ .search-button {
+  width: 100%;
+ }
+
+ .site-title {
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 42px;
+  margin: 28px 0 20px;
+}
+ .search-box {
+  width: 100%;
+ }
+  .toggle-button {
+      padding: 0.75rem;
   }
 }
