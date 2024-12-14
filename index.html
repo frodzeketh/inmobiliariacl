@@ -16,7 +16,7 @@
 
 </head>
 <body>
-  <header class="custom-header">
+  <header class="custom-header"> 
     <nav class="custom-navbar">
         <a href="../index.html" class="custom-nav-logo-center">
             <img class="logo-navbar" src="img/logo.png" alt="Logo" />
@@ -32,7 +32,7 @@
                 <a href="./pages/comprar.html" class="custom-nav-link">Comprar</a>
             </li>
             <li class="custom-nav-item">
-                <a href="./pages/publica.html" class="custom-nav-link">Emprendimientos</a>
+                <a href="./pages/publica.html" class="custom-nav-link">Publica</a>
             </li>
             <li class="custom-nav-item">
                 <a href="./pages/blog.html" class="custom-nav-link">Blog</a>
@@ -135,29 +135,42 @@
 
 
 
+<main class="search-container">
+    <h1 class="site-title"><a href="#">Mucho más que mudarte</a></h1>
+    
+    <div class="toggle-buttons">
+        <button class="toggle-button active" data-type="rent">Alquilar</button>
+        <button class="toggle-button" data-type="buy">Comprar</button>
+    </div>
+    
+    <div class="search-box">
+        <input list="locations" class="location-select" id="location" placeholder="¿Dónde quieres mudarte?" />
+        <datalist id="locations">
+            <option value="Santiago de Chile"></option>
+            <option value="Valparaíso"></option>
+            <option value="Antofagasta"></option>
+            <option value="Concepción"></option>
+            <option value="Chillán"></option>
+            <option value="Calama"></option>
+            <option value="Quilpué"></option>
+            <option value="Copiapó"></option>
+            <option value="Curicó"></option>
+            <option value="Talca"></option>
+            <option value="Coyhaique"></option>
+            <option value="Punta Arenas"></option>
+            <option value="La Serena"></option>
+            <option value="Temuco"></option>
+            <option value="Viña del Mar"></option>
+            <option value="Rancagua"></option>
+            <option value="Arica"></option>
+            <option value="Iquique"></option>
+            <option value="Puerto Montt"></option>
+        </datalist>
+    </div>
 
-    <main class="search-container">
-        <h1 class="site-title"><a href="#">Mucho más que mudarte</a></h1>
-        <div class="toggle-buttons">
-            <button class="toggle-button active" data-type="rent">Alquilar</button>
-            <button class="toggle-button" data-type="buy">Comprar</button>
-        </div>
-        
-        <div class="search-box">
-            <select class="location-select" id="location">
-                <option value="" disabled selected>¿Dónde quieres mudarte?</option>
-                <option value="santiago">Santiago de Chile</option>
-                <option value="valparaiso">Valparaíso</option>
-                <option value="antofagasta">Antofagasta</option>
-                <option value="concepcion">Concepción</option>
-            </select>
-        </div>
-    
-       
-        <button class="search-button" id="searchButton">Buscar</button>
-   
-    </main>
-    
+    <button class="search-button" id="searchButton">Buscar</button>
+</main>
+
 
 
 
@@ -218,9 +231,9 @@
                     <div class="cards-inicio-post__inside">
                         <h3 class="cards-inicio-post__title"><img src="./img/logo.png" alt="" class="logo-cards"></h3> <!-- TITULO NOTICIA 1 -->
                         <p class="cards-inicio-post__excerpt"> <!-- PARRAFO NOTICIA 1 -->
-                            Inmuebles extraordinarios dirigidos y supervisados por Corredores Públicos matriculados, especializados en la compra y venta de propiedades premium
+                            Propiedades disponibles en arriendo, gestionadas por expertos especializados en garantizar las mejores opciones para ti.
                         </p>
-                        <button class="btn btn-primary btn-cards" type="button">Ver propiedades</button>
+                        <a href="./pages/alquileres.html" class="btn btn-primary btn-cards ">Ver propiedades</a>
                     </div>
                 </div>
             </div>
@@ -231,9 +244,9 @@
                     <div class="cards-inicio-post__inside">
                         <h3 class="cards-inicio-post__title"><img src="./img/logo.png" alt="" class="logo-cards"></h3> <!-- TITULO NOTICIA 2 -->
                         <p class="cards-inicio-post__excerpt"> <!-- PARRAFO NOTICIA 2 -->
-                            Inmuebles extraordinarios dirigidos y supervisados por Corredores Públicos matriculados, especializados en la compra y venta de propiedades premium
+                            Propiedades únicas en venta, cuidadosamente seleccionadas y gestionadas por especialistas para ofrecerte las mejores oportunidades del mercado.
                         </p>
-                        <button class="btn btn-primary btn-cards" type="button">Ver propiedades</button>
+                        <a href="./pages/comprar.html" class="btn btn-primary btn-cards ">Ver propiedades</a>
                     </div>
                 </div>
             </div>
@@ -262,7 +275,7 @@
 
 
     <div class="logo__inicio-container">
-        <img src="./img/IN.png" alt="Logo TSP Asesorías" class="logo__inicio-image">
+        <img src="./img/logo-color-blanco.png" alt="Logo TSP Asesorías" class="logo__inicio-image">
     </div>
     
 
@@ -428,11 +441,16 @@
       <li class="nav__item">
           <h2 class="nav__title">Encuentra más propiedades</h2>
           <ul class="nav__ul">
-              <li><a href="./pages/sitios/santiago.html">Propiedades en Santiago</a></li>
-              <li><a href="./pages/sitios/viñadelmar.html">Propiedades en Viña del Mar</a></li>
-              <li><a href="./pages/sitios/antofagasta.html">Propiedades en Antofagasta</a></li>
-              <li><a href="./pages/sitios/arica.html">Propiedades en Arica</a></li>
-              <li><a href="./pages/sitios/atacama.html">Propiedades en Atacama</a></li>
+              
+              
+                <li><a href="./arriendo/chillan.html">Casas en alquiler en Chillán</a></li>
+                <li><a href="./arriendo/calama.html">Casas y departamentos en alquiler en Calama</a></li>
+                <li><a href="./arriendo/quilpue.html">Casas en alquiler en Quilpué</a></li>
+                <li><a href="./arriendo/copiapo.html">Casas y departamentos en alquiler en Copiapó</a></li>
+                <li><a href="./arriendo/curico.html">Casas y departamentos en alquiler en Curicó</a></li>
+                <li><a href="./arriendo/talca.html">Casas y departamentos en alquiler en Talca</a></li>
+                <li><a href="./arriendo/coyhaique.html">Casas en alquiler en Coyhaique</a></li>
+                <li><a href="./arriendo/punta-arenas.html">Casas y departamentos en alquiler en Punta Arenas</a></li>
           </ul>
       </li>
   </ul>
@@ -441,14 +459,21 @@
       <li class="nav__item">
           <h2 class="nav__title">Propiedades en Alquiler</h2>
           <ul class="nav__ul">
-              <li><a href="./pages/sitios/santiago.html">Departamentos en alquiler en Santiago</a></li>
-              <li><a href="./pages/sitios/valparaiso.html">Casas en alquiler en Valparaíso</a></li>
-              <li><a href="./pages/sitios/concepcion.html">Casas en alquiler en Concepción</a></li>
-              <li><a href="./pages/sitios/laserena.html">Casas en alquiler en La Serena</a></li>
-              <li><a href="./pages/sitios/antofagasta.html">Casas en alquiler en Antofagasta</a></li>
-              <li><a href="./pages/sitios/temuco.html">Casas en alquiler en Temuco</a></li>
-              <li><a href="./pages/sitios/viñadelmar.html">Casas en alquiler en Viña del Mar</a></li>
-              <li><a href="./pages/sitios/rancagua.html">Casas en alquiler en Rancagua</a></li>
+              <li><a href="./arriendo/santiago-de-chile.html">Departamentos en alquiler en Santiago</a></li>
+              <li><a href="./arriendo/valparaiso.html">Casas en alquiler en Valparaíso</a></li>
+              <li><a href="./arriendo/concepcion.html">Casas en alquiler en Concepción</a></li>
+              <li><a href="./arriendo/la-serena.html">Casas en alquiler en La Serena</a></li>
+              <li><a href="./arriendo/antofagasta.html">Casas en alquiler en Antofagasta</a></li>
+              <li><a href="./arriendo/temuco.html">Casas en alquiler en Temuco</a></li>
+              <li><a href="./arriendo/viña-del-mar.html">Casas en alquiler en Viña del Mar</a></li>
+              <li><a href="./arriendo/rancagua.html">Casas en alquiler en Rancagua</a></li>
+              <li><a href="./arriendo/arica.html">Casas en alquiler en Arica</a></li>
+              <li><a href="./arriendo/iquique.html">Casas y departamentos en alquiler en Iquique</a></li>
+              <li><a href="./arriendo/puerto-montt.html">Casas y departamentos en alquiler en Puerto Montt</a></li>
+                
+                
+
+
           </ul>
       </li>
   </ul>

@@ -1,4 +1,4 @@
-// Toggle button functionality
+// Funcionalidad de los botones de alternar
 const toggleButtons = document.querySelectorAll('.toggle-button');
 let selectedType = 'rent';
 
@@ -10,16 +10,19 @@ toggleButtons.forEach(button => {
     });
 });
 
-// Search functionality
+// Funcionalidad de búsqueda
 const searchButton = document.getElementById('searchButton');
-const locationSelect = document.getElementById('location');
+const locationSelect = document.getElementById('location'); // Ahora es un input
 
 searchButton.addEventListener('click', () => {
-    const selectedLocation = locationSelect.value;
+    const selectedLocation = locationSelect.value.trim().toLowerCase().replace(/\s+/g, '-');
     
     if (selectedLocation) {
-        // Construct the URL based on selection
-        const url = `pages/sitios/${selectedLocation}.html?type=${selectedType}`;
+        const folder = selectedType === 'rent' ? 'arriendo' : 'venta'; // `folder` ahora es const
+        const fileSuffix = selectedType === 'rent' ? '' : '-venta';
+        
+        // Construye la URL de acuerdo a la selección
+        const url = `${folder}/${selectedLocation}${fileSuffix}.html`;
         window.location.href = url;
     } else {
         alert('Por favor selecciona una ubicación');
