@@ -1245,8 +1245,8 @@ a {
     display: block; /* Centra el logo */
 }
 .logo-footer {
-    width: 88px;
-    height: auto; /* Mantiene las proporciones */
+    width: 126px;
+    height: 53px; /* Mantiene las proporciones */
     transition: transform 0.3s ease; /* Añade una transición suave al hacer hover */
 
     
@@ -1576,6 +1576,7 @@ a {
   font-size: 14px;
   color: #666;
   
+  
 }
 
 
@@ -1685,9 +1686,9 @@ a {
 
 .card-alquiler-description {
   font-family: "Poppins", sans-serif;
-  font-size: 10px;
+  font-size: 13px;
   color: #666;
-  margin-top: 10px;
+  margin-top: 22px;
   
 }
 
@@ -1862,8 +1863,8 @@ a {
 }
 
 .logo-footer {
-  width: 50px;
-  height: 50px;
+  width: 123px;
+  height: 56px;
 }
 
 /* Form and Image Side by Side on Desktop */
