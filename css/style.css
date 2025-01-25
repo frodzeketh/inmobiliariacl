@@ -3763,3 +3763,166 @@ textarea.contact-text {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Homedptos */
+.productos-home {
+  padding: 4rem 2rem;
+}
+
+.productos-home h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 0rem;
+  text-align: center;
+  position: relative;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.product-card h3 {
+  font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 1rem;
+}
+
+.price {
+  margin-bottom: 1rem !important;
+  font-family: "Poppins", sans-serif;
+    color: #888;
+    font-size: 14px;
+}
+
+.old-price {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  text-decoration: line-through;
+  color: #999;
+}
+
+.status {
+  position: absolute;
+  
+    font-family: "Poppins", sans-serif;
+  border-radius: 4px;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: #28a745;
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  font-size: 1.5rem;
+}
+
+.status-negociacion {
+  font-family: "Poppins", sans-serif;
+  border-radius: 4px;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: #FFC107;
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  font-size: 1.5rem;
+}
+
+.status-vendido {
+  font-family: "Poppins", sans-serif;
+  border-radius: 4px;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: #D32F2F;
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  font-size: 1.5rem;
+}
+
+
+@media (max-width: 768px) {
+  .nav-opciones, .nav-icons {
+      display: none;
+  }
+
+  .burger {
+      display: block;
+  }
+
+  .nav-opciones.show {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 1rem;
+  }
+
+  .nav-opciones.show li {
+      margin: 0.5rem 0;
+  }
+
+  .nav-icons.show {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.8);
+  }
+}
