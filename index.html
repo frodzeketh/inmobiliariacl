@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
 
 
@@ -260,8 +261,14 @@
                 </div>
             </div>
         </div>
-        <button class="carousel-button prev">←</button>
-        <button class="carousel-button next">→</button>
+        <button type="button" class="carousel-button prev" data-bs-dismiss="offcanvas" aria-label="Close">
+            <i class="fas fa-arrow-left icon-carrousel"></i>
+        </button>
+        
+        
+        <button class="carousel-button next">
+            <i class="fas fa-arrow-right icon-carrousel"></i>
+        </button>
     </div>
 
 
@@ -340,7 +347,7 @@
 
 
 <div class="content-container">
-    <h1 class="heading">Departamentos</h1>
+    <h1 class="heading-departaments">Departamentos</h1>
     <div class="department-list">
         <a href="#" class="department-item">
             <img src="./img/B9D57625-293F-441D-817B53BBE527C8F7.jpg" alt="Rhône">

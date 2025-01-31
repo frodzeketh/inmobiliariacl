@@ -376,11 +376,11 @@ a {
 }
 
 .carousel-button.prev {
-  left: 1rem;
+  left: 0rem;
 }
 
 .carousel-button.next {
-  right: 1rem;
+  right: 0rem;
 }
 
 .cta-button {
@@ -400,15 +400,75 @@ a {
   color: white;
 }
 
+.icon-carrousel{ 
+ 
+  color: #7D7C7C;
+  
+}
+
 
 
 
 @media (max-width: 768px) {
 
+  .tab.active {
+    text-decoration: none;
+    font-size: 12px;
+  }
+
+
+  .section-title {
+  
+    
+    padding: 10px;
+  }
+
+  .icon-carrousel{ 
+ 
+    color: #7D7C7C;
+    
+}
+
   .container-home {
     max-width: 1200px;
     
     padding: 1rem 1rem;
+  }
+
+  .property-image {
+    position: relative;
+    padding-top: 90.67%;
+  }
+
+  .property-type {
+    font-size: 1.175rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+
+  .property-price {
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    font-size: 1.175rem;
+   
+  }
+
+  .property-location {
+    font-size: 1.175rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.property-status {
+  display: flex
+;
+  gap: 1rem;
+  font-size: 0.975rem;
+  color: #666;
+}
+  .property-card {
+    flex: 2 0 calc(51.333% - 0.667rem);
+
   }
 }
 
@@ -529,8 +589,13 @@ a {
       grid-template-columns: 1fr;
   }
   
-  .heading {
+  .heading-departaments {
+    margin: 1rem 0rem;
       font-size: 2rem;
+  }
+
+  .department-item {
+    margin-top: 1rem;
   }
 }
 
@@ -566,7 +631,8 @@ a {
 }
 
 .heading {
-  
+ 
+  text-align: center;
   font-size: 3.5rem;
   font-weight: 700;
   line-height: 1.1;
