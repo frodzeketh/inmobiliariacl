@@ -403,6 +403,15 @@ a {
 
 
 
+@media (max-width: 768px) {
+
+  .container-home {
+    max-width: 1200px;
+    
+    padding: 1rem 1rem;
+  }
+}
+
 
 
 
@@ -503,6 +512,13 @@ a {
 }
 
 @media (max-width: 768px) {
+
+  .content-container {
+    max-width: 1200px;
+    
+    padding: 1rem 1rem;
+  }
+
   .department-list {
       grid-template-columns: repeat(2, 1fr);
   }
@@ -534,7 +550,7 @@ a {
 
 
 
-.main-container {
+.main-container-2 {
   max-width: 100%;
   margin: 0 auto;
   padding: 1rem 5rem;
@@ -567,9 +583,11 @@ a {
 }
 
 @media (max-width: 768px) {
-  .main-container {
+  .main-container-2 {
       grid-template-columns: 1fr;
       gap: 2rem;
+      padding: 1rem 1rem;
+      
   }
 
   .heading {
@@ -682,6 +700,7 @@ a {
 @media (max-width: 768px) {
   .cards-home-container {
       grid-template-columns: 1fr;
+      padding: 1rem 1rem;
   }
 
   .cards-home-agencies .cards-home-description {
