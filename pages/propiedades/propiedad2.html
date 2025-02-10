@@ -144,54 +144,58 @@
 
   
 
-<div class="container-maps mx-auto p-4">
-    
-    <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-        </div>
-        <div class="carousel-inner alq-img">
-          <div class="carousel-item active alq-img">
-            <img src="../../img/alquiler-1-2.jpg" class="d-block b-r w-100 " alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../../img/alquiler-2-2.jpg" class="d-block w-100 " alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../../img/alquiler-4-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../../img/alquiler-4-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../../img/alquiler-4-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../../img/alquiler-4-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../../img/alquiler-4-1.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+
+
+
+
+
+
+
+
+<!-- Modal para mostrar imagen ampliada -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="imageModalLabel">Imagen ampliada</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
+      <div class="modal-body text-center">
+        <img id="modalImage" src="" class="img-fluid" alt="Imagen ampliada">
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- Carrusel -->
+<div id="carouselExampleIndicators" class="carousel slide mx-auto p-3" style="max-width: 600px;">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../../img/alquiler-1-2.jpg" class="d-block w-100 img-thumbnail" alt="..." onclick="openModal(this)">
+    </div>
+    <div class="carousel-item">
+      <img src="../../img/alquiler-2-2.jpg" class="d-block w-100 img-thumbnail" alt="..." onclick="openModal(this)">
+    </div>
+    <div class="carousel-item">
+      <img src="../../img/alquiler-3-3.jpg" class="d-block w-100 img-thumbnail" alt="..." onclick="openModal(this)">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
-
-
+<div class="container-maps mx-auto p-4">
   <div class="grid-lg-cols-[2fr,1fr] gap-6">
     <!-- Columna Izquierda -->
     <div class="card-descripcion">
@@ -259,6 +263,13 @@
     </div>
 
     <!-- Ubicación con el Iframe del Mapa -->
+    
+              
+  
+
+
+    
+
     <div class="card-ubicacion">
       <div class="header-ubicacion">
         <h2 class="card-alquiler-header">Ubicación</h2>
@@ -270,27 +281,81 @@
         </iframe>
       </div>
     </div>
-
-    
    
+
+
+
+
+
+
+
+
+
+    <div class="card-ubicacion">
+      <div class="header-ubicacion">
+        <h2 class="card-alquiler-header">Contacto</h2>
+      </div>
+      <div class="contenido-ubicacion p-4">
+        <div class="card-alquiler-footer">
+          <div class="card-alquiler-agent-info">
+            <img src="../img/casa1.jpeg" alt="Agente" class="card-alquiler-agent-img">
+            <div>
+              <div class="name-agent">Maria Eugenia</div>
+
+              <div style="font-size: 12px; color: #888;">Top Arriendos</div>
+            </div>
+          </div>
+        </a>
+        </div>
+      
+
+          
+
+
+
+          <div class="card-alquiler-contact-buttons">
+
+             <!-- WhatsApp -->
+             <a href="https://wa.me/56972147166?text=Hola%20Top%20Arriendos,%20estoy%20interesado%20en%20esta%20propiedad%20en%20arriendo.%20%C2%BFSigue%20disponible?" class="card-alquiler-wsp">
+              <i class='bx bxl-whatsapp icono-wsp'></i>
+              <span class="text-botton-wsp">WhatsApp</span>
+          </a>
+           
+           
+
+
+
+
+
+            <!-- Teléfono -->
+                                                                                                                                                                             
+            <a href="tel:+56972147166" class="card-alquiler-phone">
+              <svg class="icono-cards" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+            </a>
+          
+            <!-- Correo -->
+            <a href="mailto:toparriendoschile@gmail.com" class="card-alquiler-email">
+              <svg class="icono-cards" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+            </a>
+          
+           
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

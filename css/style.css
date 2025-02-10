@@ -237,7 +237,8 @@ a {
 }
 
 .section-title {
-  
+  font-family: "Poppins", sans-serif;
+  color: #333;
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -257,6 +258,7 @@ a {
   display: flex;
   gap: 1rem;
   margin-bottom: 2rem;
+  font-family: "Poppins", sans-serif;
 }
 
 .tab {
@@ -336,18 +338,23 @@ a {
 }
 
 .property-type {
-  font-size: 0.875rem;
+  
+  font-size: 1.1rem;
   color: #666;
   margin-bottom: 0.5rem;
 }
 
 .property-price {
-  font-weight: bold;
+  color: #333;
+  
+  font-size: 1.25rem;
+  font-weight: 550;
   margin-bottom: 0.5rem;
+  font-family: "Poppins", serif;
 }
 
 .property-location {
-  font-size: 0.875rem;
+  font-size: 1.1rem;
   color: #666;
   margin-bottom: 1rem;
 }
@@ -519,6 +526,15 @@ a {
   padding: 2rem;
 }
 
+.heading-departaments {
+  font-family: "Poppins", serif;
+  margin: 1rem 0rem;
+    font-size: 2.5rem;
+    margin-bottom: 19px;
+    color:#333;
+    font-weight: 500s;
+}
+
 .heading-text {
   font-size: 2.5rem;
   margin-bottom: 2rem;
@@ -592,6 +608,7 @@ a {
   .heading-departaments {
     margin: 1rem 0rem;
       font-size: 2rem;
+      color: #333;
   }
 
   .department-item {
@@ -814,7 +831,7 @@ a {
 
 .main-publica {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 3rem auto;
   padding: 2rem;
   display: flex;
   align-items: center;
@@ -829,17 +846,18 @@ a {
 }
 
 .publica-icon {
-  width: 48px;
-  height: 48px;
+  width: 0px;
+  height: 0px;
 }
 
 .publica-title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
   color: #333;
 }
 
 .publica-center {
+  font-size: 1.5rem;
   flex: 1;
   text-align: center;
 }
@@ -887,6 +905,10 @@ a {
       flex-direction: column;
   }
 
+  .publica-icon {
+    width: 109px;
+    height: 87px;
+}
   .publica-center {
       margin: 1rem 0;
   }
@@ -939,7 +961,7 @@ a {
 .noticias-toparriendos {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem 1rem;
+  padding: 2rem;
 }
 
 .noticias-header {
@@ -948,9 +970,11 @@ a {
 }
 
 .noticias-title {
+  font-family: "Poppins", serif;
   font-size: 2.5rem;
   color: #333;
   font-weight: 500;
+  margin-bottom: 19px;
 }
 
 .noticias-article {
@@ -1055,6 +1079,32 @@ a {
 
 
 
+
+  /* Aumentar el ancho del carrusel */
+  #carouselExampleIndicators {
+    margin-top: 19px !important;
+    max-width: 700px !important; /* Ajusta el ancho según lo necesites */
+    object-fit: contain !important;
+    object-position: center !important;
+    margin: auto; /* Centra el carrusel */
+    
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    height: 400px;
+    padding: 16px !important;
+  }
+
+  /* Asegurar que las imágenes no tengan bordes extraños */
+  .carousel-inner img {
+    border-radius: 8px !important; /* Quita cualquier borde redondeado */
+    width: 100%; /* Usa todo el ancho disponible */
+    border: none !important;
+    background-color: #f9f9f9;
+    
+    object-fit: scale-down; /* Ajusta la imagen sin recortarla */
+      
+    }
+  
 
 
 
